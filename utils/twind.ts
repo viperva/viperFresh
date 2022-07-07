@@ -5,6 +5,13 @@ export * from "twind";
 export const config: Configuration = {
   darkMode: "class",
   mode: "silent",
+  theme: {
+    extend: {
+      fontFamily: {
+        "viper": ["inconsolata"],
+      },
+    },
+  },
 };
 
 if (IS_BROWSER) setup(config);
