@@ -21,9 +21,9 @@ export default function Countdown(props: { target: string }) {
   }, [props.target]);
 
   if (now > target) {
-    return <span>🎉</span>;
+    return <span>{window.innerWidth}</span>;
   }
 
   const secondsLeft = Math.floor((target.getTime() - now.getTime()) / 1000);
-  return <span>{timeFmt.format(secondsLeft, "seconds")}</span>;
+  return <span>{window.innerWidth}</span>;
 }

@@ -7,9 +7,16 @@ export const config: Configuration = {
   mode: "silent",
   theme: {
     extend: {
+      backgroundImage: {
+        "desert": "url('/back.svg')",
+      },
       fontFamily: {
         "viper": ["inconsolata"],
       },
+    },
+    screens: {
+      "sm": { "max": "991px" },
+      "lg": { "min": "992px" },
     },
   },
 };
