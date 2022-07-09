@@ -2,6 +2,7 @@
 import { h } from "preact";
 import { tw } from "@twind";
 import NavItem from "../islands/NavItem.tsx";
+import Desert from "./back.tsx";
 
 export default function Home() {
   // const navItemNameStyle = window.innerWidth >= 991
@@ -47,7 +48,10 @@ export default function Home() {
   ];
 
   return (
-    <div class={tw`w-screen font-mono h-screen bg-desert bg-cover`}>
+    <div class={tw`w-screen font-mono h-screen`}>
+      <div class={tw`absolute z-[-1] h-[100vh] overflow-hidden`}>
+        <Desert />
+      </div>
       <div
         class={tw
           `bg-black w-full h-1/5 flex justify-center items-center bg-opacity-80`}
