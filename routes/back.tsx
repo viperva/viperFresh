@@ -5,24 +5,30 @@ import { tw } from "@twind";
 export default function Back() {
   return (
     <svg
-      width="1920"
-      height="1080"
       viewBox="0 0 1920 1080"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      style={{
+        position: "fixed",
+        top: "0",
+        left: "0",
+        height: "100%",
+        width: "100%",
+        transform: "scale(1.1)",
+      }}
     >
       <g
         id="Slide 16:9 - 1"
         clip-path="url(#clip0_1_2)"
         style={{
-          transform: "translateY(-70px)",
+          //   transform: "translateY(-70px)",
         }}
       >
-        <rect width="1920" height="1080" fill="#A5840F" />
+        <rect width="100%" height="100%" fill="#A5840F" />
         <g
           class={tw`animate-backWave`}
           id="back-wave"
-          filter="url(#filter0_d_1_2)"
+          //   filter="url(#filter0_d_1_2)"
         >
           <path
             d="M4362.5 480.5C4668.58 349.062 4578.51 453.871 4373.57 617.967C4397.77 686.034 4414.56 755.13 4324 765.5C4296.74 768.622 4263.53 754.223 4224.68 732.958C3950.25 939.028 3607.58 1171.32 3607.58 1171.32L16.9024 1225C16.9024 1225 16.9024 800.202 -129.929 702.854C-183.019 691.277 -207.391 682.441 -189.127 683.266C-167.129 684.261 -147.48 691.218 -129.929 702.854C51.5005 742.42 568.316 814.008 865 641.453C968.634 581.179 1430.72 595.441 1792.5 558.5C1979.49 539.406 2083.04 507.8 2271 506.5C2590.33 504.291 2689.5 683.266 3077.5 641.453C3496 576.953 3582 697.453 3815 614.5C3985.92 576.998 4124.19 677.95 4224.68 732.958C4277.87 693.015 4328.5 654.057 4373.57 617.967C4351.91 557.021 4324.31 496.901 4362.5 480.5Z"
@@ -32,7 +38,7 @@ export default function Back() {
         <g
           class={tw`animate-frontWave`}
           id="front-wave"
-          filter="url(#filter1_d_1_2)"
+          //   filter="url(#filter1_d_1_2)"
         >
           <path
             style={{
@@ -45,19 +51,19 @@ export default function Back() {
         <g
           class={tw`origin-bottom animate-wiggle`}
           id="cactus"
-          filter="url(#filter2_i_1_2)"
+          //   filter="url(#filter2_i_1_2)"
         >
           <path
             d="M1342.09 797.94C1347.95 862.335 1347.95 870.47 1347.95 994L1392.15 989.84C1394.56 845.565 1405.67 809.884 1397.36 725.758C1437.04 732.891 1451.56 724.502 1456 675.076C1456 617.059 1442.36 625.515 1436.45 645.067C1431.52 661.392 1429.74 679.454 1427.33 685.746C1424.93 692.039 1410.04 706.38 1400.24 683.746C1389.77 590.208 1381.25 545.262 1361.8 541.035C1326.48 530.571 1337.03 599.758 1337.42 733.761C1334.12 750.326 1282.82 784.443 1276.83 751.766C1270.58 717.623 1263.37 688.414 1252.73 689.081C1239.36 692.304 1237.66 704.213 1237.09 729.76C1234.95 805.141 1270.48 815.628 1342.09 797.94Z"
             fill="#2F5E24"
           />
         </g>
-        <g class={tw`animate-sunlight`} id="sun" filter="url(#filter3_f_1_2)">
+        <g class={tw`animate-sunlight`} id="sun">
           <ellipse cx="214.5" cy="102" rx="336.5" ry="319" fill="#EEDF54" />
         </g>
         <g
           id="deadbush"
-          filter="url(#filter4_df_1_2)"
+          //   filter="url(#filter4_df_1_2)"
           style={{
             transformOrigin: "center",
             transformBox: "fill-box",
@@ -231,10 +237,12 @@ export default function Back() {
             in2="effect1_dropShadow_1_2"
             result="shape"
           />
-          <feGaussianBlur
+          {
+            /* <feGaussianBlur
             stdDeviation="0.5"
             result="effect2_foregroundBlur_1_2"
-          />
+          /> */
+          }
         </filter>
         <clipPath id="clip0_1_2">
           <rect width="1920" height="1080" fill="white" />

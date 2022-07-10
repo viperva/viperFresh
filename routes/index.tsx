@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <div class={tw`w-screen font-mono h-screen`}>
-      <div class={tw`absolute z-[-1] h-[100vh] overflow-hidden`}>
+      <div class={tw`absolute z-[-1] w-[100vw] h-[100vh] overflow-hidden`}>
         <Desert />
       </div>
       <div
