@@ -75,47 +75,47 @@ export const config: Configuration = {
             "transform": "rotate(300deg)",
           },
           "25%": {
-            "offset-distance": "25.030632%",
+            "offset-distance": "21.030632%",
             "transform": "rotate(400deg)",
           },
           "29.7%": {
-            "offset-distance": "30.95488%",
+            "offset-distance": "26.95488%",
             "transform": "rotate(500deg)",
           },
           "34.4%": {
-            "offset-distance": "40.944442%",
+            "offset-distance": "31.944442%",
             "transform": "rotate(650deg)",
           },
           "38.6%": {
-            "offset-distance": "46.323889%",
+            "offset-distance": "36.323889%",
             "transform": "rotate(700deg)",
           },
           "42.1%": {
-            "offset-distance": "49.560529%",
+            "offset-distance": "40.560529%",
             "transform": "rotate(750deg)",
           },
-          "44.5%": {
-            "offset-distance": "54.180725%",
+          "45.5%": {
+            "offset-distance": "44.180725%",
             "transform": "rotate(800deg)",
           },
           "50%": {
-            "offset-distance": "60.493522%",
+            "offset-distance": "51.493522%",
             "transform": "rotate(900deg)",
           },
           "56%": {
-            "offset-distance": "66.476399%",
+            "offset-distance": "55.476399%",
             "transform": "rotate(1000deg)",
           },
           "60%": {
-            "offset-distance": "72.685059%",
+            "offset-distance": "60.685059%",
             "transform": "rotate(1100deg)",
           },
-          "70.3%": {
-            "offset-distance": "98.29924%",
+          "65.3%": {
+            "offset-distance": "67.29924%",
             "transform": "rotate(1200deg)",
           },
           "71%": {
-            "offset-distance": "100%",
+            "offset-distance": "74%",
             "transform": "rotate(1350deg)",
           },
           "100%": {
@@ -138,10 +138,10 @@ export const config: Configuration = {
         },
       },
       animation: {
-        "wiggle": "wiggle 15s linear infinite normal forwards",
-        "frontWave": "wave1 30s linear infinite normal forwards",
-        "backWave": "wave2 30s linear infinite normal forwards",
-        "deadbush": "ballRotate 17s linear infinite normal forwards",
+        "wiggle": "wiggle 30s linear infinite normal forwards",
+        "frontWave": "wave1 60s linear infinite normal forwards",
+        "backWave": "wave2 60s linear infinite normal forwards",
+        "deadbush": "ballRotate 15s linear infinite normal forwards",
         "sunlight": "sun 10s linear infinite normal forwards",
       },
       backgroundImage: {
