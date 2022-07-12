@@ -8,17 +8,38 @@ export const config: Configuration = {
   theme: {
     extend: {
       keyframes: {
-        wiggle: {
+        enter: {
           "0%": {
-            transform: "rotate(-4.109468deg)",
-            "animation-timing-function": "cubic-bezier(0.42,0,0.34,1.005)",
+            transform: "translateY(-500px)",
+            "animation-timing-function": "ease-in",
           },
-          "50%": {
-            transform: "rotate(4.731457deg)",
-            "animation-timing-function": "cubic-bezier(0.77,0,0.175,1)",
+          "38%": {
+            transform: " translateY(0)",
+            "animation-timing-function": "ease-out",
+          },
+          "55%": {
+            transform: "translateY(-65px)",
+            "animation-timing-function": "ease-in",
+          },
+          "72%": {
+            transform: " translateY(0)",
+            "animation-timing-function": "ease-out",
+          },
+          "81%": {
+            transform: "translateY(-28px)",
+            "animation-timing-function": "ease-in",
+          },
+          "90%": {
+            transform: "translateY(0)",
+            "animation-timing-function": "ease-out",
+          },
+          "95%": {
+            transform: "translateY(-8px)",
+            "animation-timing-function": "ease-in",
           },
           "100%": {
-            transform: "rotate(-4.109468deg)",
+            transform: "translateY(0)",
+            "animation-timing-function": "ease-out",
           },
         },
         wave1: {
@@ -143,6 +164,7 @@ export const config: Configuration = {
         "backWave": "wave2 60s linear infinite normal forwards",
         "deadbush": "ballRotate 15s linear infinite normal forwards",
         "sunlight": "sun 10s linear infinite normal forwards",
+        "expand": "enter 0.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) both",
       },
       backgroundImage: {
         "desert": "url('/back.svg')",
